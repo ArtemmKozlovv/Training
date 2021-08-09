@@ -1,2 +1,2 @@
-# Training EPAM | Java Web Development
+# Training
 Training EPAM | Java Web Development

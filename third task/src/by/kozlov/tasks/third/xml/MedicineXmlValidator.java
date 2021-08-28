@@ -14,7 +14,7 @@ import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
 public class MedicineXmlValidator extends DefaultHandler {
-    public static final String SCHEMA_FILE_NAME = "medicines.xsd";
+    public static final String SCHEMA_FILE_NAME = "resources/medicines.xsd";
 
     private StringBuilder error = new StringBuilder();
 

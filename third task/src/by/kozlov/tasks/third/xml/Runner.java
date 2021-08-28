@@ -11,10 +11,10 @@ import javax.xml.stream.XMLStreamException;
 
 public class Runner {
     public static void main(String[] args) throws IOException, XMLStreamException {
-        MedicineXmlValidator validator = new MedicineXmlValidator("medicines.xml");
+        MedicineXmlValidator validator = new MedicineXmlValidator("resources/medicines.xml");
         if (validator.validate()) {
             MedicineXmlReader reader = new MedicineXmlReader();
-            List<Medicine> medicines = reader.read("medicines.xml");
+            List<Medicine> medicines = reader.read("resources/medicines.xml");
 
             Collections.sort(medicines, new Comparator<Medicine>() {
                 @Override
@@ -26,7 +26,7 @@ public class Runner {
                 System.out.println(medicine);
             }
             MedicineXmlWriter writer = new MedicineXmlWriter();
-            writer.write(medicines, "medicines-new.xml");
+            writer.write(medicines, "resources/medicines-new.xml");
             System.out.println("OK");
         } else {
             System.out.println(validator.getError());

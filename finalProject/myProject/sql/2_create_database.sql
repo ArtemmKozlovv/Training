@@ -1,0 +1,1 @@
+CREATE DATABASE `travel_agency_db` DEFAULT CHARACTER SET utf8;
